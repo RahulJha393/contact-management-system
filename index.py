@@ -2,8 +2,10 @@ from tkinter import *
 import sqlite3
 import tkinter.ttk as ttk
 import tkinter.messagebox as tkMessageBox
+import pyttsx3
 
-#DEVELOPED BY Mark Arvin
+
+#DEVELOPED BY Rahul Kumar Jha
 root = Tk()
 root.title("Contact List")
 width = 700
@@ -27,7 +29,12 @@ CONTACT = StringVar()
 
 
 #============================METHODS=====================================
-
+import pyttsx3
+speaker = pyttsx3.init()
+def speak(a):
+    speaker.say(a)
+    speaker.runAndWait()
+speak("New version of...Rahul's.. Contact...Management...System... 2.3.o... is Ready!")
 def Database():
     conn = sqlite3.connect("pythontut.db")
     cursor = conn.cursor()
@@ -260,8 +267,6 @@ TableMargin.pack(side=TOP)
 #============================LABELS======================================
 lbl_title = Label(Top, text="Contact Management System", font=('arial', 16), width=500)
 lbl_title.pack(fill=X)
-
-#============================ENTRY=======================================
 
 #============================BUTTONS=====================================
 btn_add = Button(MidLeft, text="+ ADD NEW", bg="#66ff66", command=AddNewWindow)
