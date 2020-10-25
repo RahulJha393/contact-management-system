@@ -1,4 +1,7 @@
-CONTACT MANAGEMENT SYSTEM - PYTHON
+<marquee>CONTACT MANAGEMENT SYSTEM - PYTHON</marquee>
 
+In this code we have used the python tkinter module to make tge GUI 
+SQLite3 is used for the database management system or to store the data of the user 
+This programm helps you to maintain the contacts in a great format also since the DBMS is maintained using the SQLite3 so we can implement the filters on it.
 
 - THANKS YOU TO DOWNLOAD THE PROJECT
